@@ -8,6 +8,10 @@
 /dataSources.local.xml
 
 
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+
 # NetBeans specific #
 nbproject/private/
 build/
