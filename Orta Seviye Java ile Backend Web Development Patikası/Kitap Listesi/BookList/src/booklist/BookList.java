@@ -35,15 +35,15 @@ public class BookList {
         // List to Map
         Map<String, String> mappedBook = new HashMap<>();
         mappedBook = bookList.stream().collect(
-                Collectors.toMap(Book::getBookName, Book::getBookAuthor));       
-        
-        System.out.println(mappedBook);
+                Collectors.toMap(Book::getBookName, Book::getBookAuthor));            
         
         // Filter Map if Page Number Greater Than 100
         
         List<Book> filteredBookList = new ArrayList<>();
         filteredBookList = bookList.stream().filter(book -> book.getPageCount()>100).collect(Collectors.toList());
         
+        // Print Result
+        System.out.println(mappedBook);
         System.out.println(filteredBookList);
     }
     
